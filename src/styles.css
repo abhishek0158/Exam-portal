@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { 
+  height: 100%; 
+  background-color: #e0e0e0  ;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.text-center{
+    text-align: center;
+}
+
+ .image-container {
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the desired height */
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide any overflow */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    text-align: center;
+
+  }
+  
+.image-container img {
+width: 100%; /* Make the image fill the container's width */
+height: 100%; /* Make the image fill the container's height */
+object-fit: cover; /* Maintain aspect ratio and cover the container */
+} 
+
+  
+.ml20{
+  margin-left: 20px;
+}
+.mt20{
+  margin-top: 20px;
+}
+.mb20{
+  margin-bottom: 20px;
+}
+.mr20{
+  margin-right: 20px;
+}

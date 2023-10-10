@@ -1,0 +1,59 @@
+<mat-card>
+    <h1 class="align-center">Your Profile Details</h1>
+    <mat-card-content>
+        <div class="bootstrap-wrapper">
+            <div class="container">
+                <div class="container align-center"    >
+                    <img src="https://media.istockphoto.com/id/522855255/vector/male-profile-flat-blue-simple-icon-with-long-shadow.jpg?s=612x612&w=0&k=20&c=EQa9pV1fZEGfGCW_aEK5X_Gyob8YuRcOYCYZeuBzztM=" 
+                    class="profile-image"
+                    mat-card-image
+                 
+                    alt="">
+                </div>
+                <h1 class="align-center" style="margin-top: 20px;">{{user.firstName}} {{user.lastName}}</h1>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <table class="table align-center">
+                            <tr >
+                                <td >Username</td>
+                                <td >{{user.username}}</td>
+                            </tr>
+                            <tr >
+                                <td >User ID</td>
+                                <td >EXAM{{user.id}}</td>
+                            </tr>
+                            <tr >
+                                <td >Email</td>
+                                <td >{{user.email}}</td>
+                            </tr>
+                            <tr *ngIf="user.phone">
+                                <td >Phone</td>
+                                <td >{{user.phone}}</td>
+                            </tr>
+                            <tr >
+                                <td >Role</td>
+                                <td >{{user.authorities[0].authority}}</td>
+                            </tr>
+                            <tr >
+                                <td >Status</td>
+                                <td >{{user.enabled}}</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+    <!-- <div style="text-align: center;">
+        <mat-card-actions >
+            <button  mat-button>LIKE</button>
+            <button t mat-button>SHARE</button> 
+        </mat-card-actions>
+    </div> -->
+    <div class="align-center" style="text-align:center;">
+        <button  mat-raised-button color="primary" style="margin: 10px 10px;">UPDATE</button>
+        <button  mat-raised-button color="accent">SHARE</button>
+    </div>
+    
+</mat-card>

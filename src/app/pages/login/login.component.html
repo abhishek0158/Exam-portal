@@ -1,0 +1,60 @@
+
+
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row mt20">
+            <div class="col-md-6 offset-md-3">
+            <mat-card>
+              <mat-card-content>
+                        <div  class="container image-container text-center">
+                            <img mat-card-md-image src="../../../assets/exam-potal.jpg" width="100px" height="100px" alt="">
+                        </div>
+                        <h2 class="text-center  mb20" style="margin-top: 20px;">Login</h2>
+                    
+                        <form (ngSubmit)="login()" >
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Username</mat-label>
+                                <input [(ngModel)]="loginData.username" name="username" matInput placeholder="Enter your Username" required>
+                               <mat-hint>Valid Username</mat-hint>
+                            </mat-form-field>
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Password</mat-label>
+                                <input [(ngModel)]="loginData.password" name="password" type="password" matInput placeholder="Enter your Password" required>
+                            </mat-form-field>
+                            <div class="container text-center">
+                                <button type="submit" mat-raised-button color="primary">Login</button>
+                                <button class="ml20"  mat-raised-button color="accent">Reset</button>
+                            </div>
+                        </form>
+
+
+
+                        <!-- <form (ngSubmit)="login()" #loginForm="ngForm">
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Username</mat-label>
+                                <input [(ngModel)]="loginData.username" name="username" matInput placeholder="Enter your Username" required>
+                                <mat-hint>Valid Username</mat-hint>
+                                <mat-error *ngIf="loginForm.controls.username.invalid && (loginForm.controls.username.dirty || loginForm.controls.username.touched)">
+                                    Username is required.
+                                </mat-error>
+                            </mat-form-field>
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Password</mat-label>
+                                <input [(ngModel)]="loginData.password" name="password" type="password" matInput placeholder="Enter your Password" required>
+                                <mat-error *ngIf="loginForm.controls.password.invalid && (loginForm.controls.password.dirty || loginForm.controls.password.touched)">
+                                    Password is required.
+                                </mat-error>
+                            </mat-form-field>
+                            <div class="container text-center">
+                                <button type="submit" mat-raised-button color="primary" [disabled]="!loginForm.valid">Login</button>
+                                <button class="ml20" type="reset" mat-raised-button color="accent">Reset</button>
+                            </div>
+                        </form> -->
+                        
+                    </mat-card-content>
+                  </mat-card>
+            </div>
+           
+        </div>
+    </div>
+</div>

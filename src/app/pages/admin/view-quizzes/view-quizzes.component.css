@@ -1,0 +1,22 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3407/3407038.png');
+    background-size: cover;
+  }
+  .custom-button {
+    margin: 10px; /* Adjust the margin as needed */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    min-width: auto; /* Allow the button to shrink on small screens */
+  }
+  
+  /* Media query for small screens */
+  @media screen and (max-width: 600px) {
+    .custom-button {
+      padding: 5px 10px; /* Reduce padding for smaller screens */
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+  

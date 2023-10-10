@@ -1,0 +1,74 @@
+<div class="bootstrap-wrapper mt20">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <mat-card>
+                    <mat-card-header>
+                        <!-- <mat-card-title>
+                            Read the instructions carefully.
+                        </mat-card-title>
+                        <mat-card-subtitle>
+                            One Step to go!!!
+                        </mat-card-subtitle> -->
+                    </mat-card-header>
+                    <mat-card-content>
+                        <h1> Welcome to the {{quiz.title}} Quiz </h1>
+                        <p>
+                            {{quiz.description}} 
+
+                            This quiz is designed to test your knowledge on {{quiz.title}}. It's a fun and educational activity to challenge yourself and learn something new!
+                        </p>
+                        <mat-divider>
+
+                        </mat-divider>
+                        <br>
+                        <h1 >Important instructions</h1>
+
+                        <ul>
+                            <li>
+                                You will have <b> {{quiz.numberOfQuestions*2 }} minutes</b> to complete the quiz. The timer will start once you begin.
+                            </li>
+                            <li>
+                                This quiz consists of <b>{{quiz.numberOfQuestions}} questions</b>. Each question is in multiple-choice format.
+                            </li>
+                            <li>
+                                You will earn <b>{{quiz.maxMarks/quiz.numberOfQuestions}} points</b> for each correct answer. There is no penalty for incorrect answers, so make sure to attempt every question.
+                            </li>
+                            <li>
+                                Once you've answered all the questions, click the "Submit" button. You will receive your score and feedback immediately after submission.
+                            </li>
+                            <li>
+                                Please ensure you are using a compatible device and a modern browser for the best experience.
+                            </li>
+                            <li>
+                                : Do not use external resources or collaborate with others during the quiz. This is a solo endeavor to test your individual knowledge.
+                            </li>
+                            <li>
+                                If you encounter any technical issues, please contact our support team at <b>exam_portal_support@examportal.com</b>.
+                            </li>
+                            <li>
+                                Your data is important to us. We will only use it for quiz-related purposes and will not share it with third parties.
+                            <li>
+                                You can review and revise your answers before submitting, but remember to stay within the time limit.
+                            </li>
+                            <li>
+                                After submission, you will see your score and receive feedback on your performance. You can also review your answers to learn from your mistakes.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>Good Luck! We hope you enjoy the quiz and test your knowledge to the fullest. Begin by clicking the "Start Quiz" button when you're ready!</li>
+                        </ul>
+
+                        <mat-divider></mat-divider>
+                        <br>
+                    </mat-card-content>
+                    <mat-card-actions >
+                        <div class="container text-center mt20 mb20">
+                            <button (click)="startQuiz()" color="warn" mat-raised-button>Start Quiz</button>
+                        </div> 
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
